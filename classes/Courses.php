@@ -4,7 +4,7 @@ class Courses {
     // Params for DB
     private $conn;
 
-    private $db_table = "phno1900.courses";
+    private $db_table = "moment5.courses";
 
     // Variables in table Courses
     public $id;
@@ -123,7 +123,7 @@ class Courses {
     if(isset($_GET['id'])) {
         $id = $_GET['id'];
             
-        $query = "DELETE FROM phno1900.courses WHERE id = $id";
+        $query = "DELETE FROM moment5.courses WHERE id = $id";
         $stmt = $this->conn->prepare($query);
 
         // Clean data

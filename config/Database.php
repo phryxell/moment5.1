@@ -2,19 +2,12 @@
 class Database {
     // Params
 
-     /* 
-      * Localhost settings
+     // Localhost settings
         private $host = 'localhost';
         private $db_name = 'moment5';
         private $username = 'moment5';
         private $password = 'password';
-      *
-    */
-
-    private $host = 'studentmysql.miun.se';
-    private $db_name = 'phno1900';
-    private $username = 'phno1900';
-    private $password = '7umyc5hj';
+   
 
     // Connect to DB
     public function connect() {
