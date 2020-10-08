@@ -19,7 +19,7 @@ $result = $courses->read();
 // Get row count
 $num = $result->rowCount();
 
-// Check if anny posts
+// Check if any courses exists
 if($num > 0) {
     $courses_arr = array();
 
@@ -34,7 +34,7 @@ if($num > 0) {
             'syllabus' => $syllabus
         );
 
-        // Push to "data"
+        // Push to data
         array_push($courses_arr, $course_item);
     }
     // Change to JSON
