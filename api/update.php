@@ -29,7 +29,7 @@ $courses->progression = $data->progression;
 $courses->syllabus = $data->syllabus;
 
 
-// Update post
+// Update course
 if($courses->update()) {
     echo json_encode(
         array('message' => 'Course updated')
