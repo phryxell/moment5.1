@@ -7,18 +7,17 @@ Alla metoder ligger i mappen api.
 
 Tillgängliga metoder:
 * GET - api/read.php & api/readOne.php. read läser ut alla tillgängliga kurser ur databasen medan readOne hämtar en kurs med ett angivet id, kurs med id 1 = readOne.php?id=1
-* POST - api/create.php, måste ges information i dess 'request body' i JSON. Exempelvis:
+* POST - api/create.php, måste ges information i dess 'request body' i JSON. ID behöver ej anges då det skapas med autoinkrement i databasen. Exempelvis:
 ```
     {
-        "id":"1",
         "code":"DT057G",
         "course_name":"Webbutveckling I",
         "progression":"A",
         "syllabus":"https:\/\/www.miun.se\/utbildning\/kursplaner-och-utbildningsplaner\/Sok-kursplan\/kursplan\/?kursplanid=17948"
     }
 ```
-* PUT - api/update.php. Uppdaterar en kurs ur databasen baserat på 'request body', formatteras på samma sätt likt POST-metoden.
-* DELETE - api/delete.php. Raderar data ur databasen baserat på angivet ID.
+* PUT - api/update.php. Uppdaterar en kurs ur databasen baserat på 'request body', formatteras på samma sätt likt POST-metoden. Måste ange ID.
+* DELETE - api/delete.php. Raderar data ur databasen baserat på angivet ID. Exempelvis api/delete.php?id=1
 
 #### Steg för steg:
 
